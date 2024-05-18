@@ -163,3 +163,11 @@ print(date, weather) #결과값
 
 
 #불변성(immutable)
+a = 'pithon'
+a = a[:1] + 'y' + a[2:]
+print(a)
+
+
+#문자열 포매팅
+#숫자대입 = 포맷코드 %d
+print('I eat %d apples.' %3)
