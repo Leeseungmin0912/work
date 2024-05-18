@@ -71,6 +71,7 @@ print("""I love python""")
 print('''I love python''')
 
 
+<<<<<<< HEAD
 print("python's favorite food it perl")
 
 
@@ -171,3 +172,10 @@ print(a)
 #문자열 포매팅
 #숫자대입 = 포맷코드 %d
 print('I eat %d apples.' %3)
+=======
+print("pyhon's favorite food it perl")
+
+
+say = "pyhon is very easy. he says"
+print(say)
+>>>>>>> a718f61caaa64928ba8b42490d9b99c6718e776c
