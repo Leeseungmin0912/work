@@ -511,4 +511,149 @@ print(a.get('gender','female'))
 
 
 # Set 자료형
+#세트 만들기
+s1 =  set([1,2,3])
+print(s1)
+print(type(s1))
+
+#세트는 중복을 허용하지 않는다
+#세트는 순서가 없다.(이터레이블자료형이 아니다.)
+s2 = set('hello')
+print(s2)
+
+
+# 세트 교집합 구하기 -&(and 이면서)
+s1 = set([1,2,3,4,5,6])
+s2 = set([4,5,6,7,8,9])
+#이때 교집합 수는 4,5,6
+print(s1 & s2)
+print(s1.intersection(s2))
+print(s1 and s2) #논리 연산자 이기 때문에 마지막에 있는 것을 반환함
+
+
+# 합집합 - | (or 이거나)
+print(s1 | s2)
+print(s1.union(s2))
+print(s1 or s2)
+
+
+#차집합 ('-')
+print(s1 - s2)
+print(s2 - s1)
+
+#BOOL (BOOLEAN)
+#불 또는 불린 자료형이란 참과 거짓(Ture & False)를 나타내는 자료형
+#불 자료형은 두가지 값만 가지고 있다.
+
+#불선언
+true = 1 #Syntax Error
+
+#올바른 불 자료형 만들기
+a = True
+b = False
+type(a),type(b)
+
+#불 자료형은 보통(거의대부분) 조건문의 리턴값으로 사용
+print(1 == 1)
+print(1 > 2)
+print(3 >= 3)
+
+
+#자료형의 참과 거짓
+# 이진법의 불린
+print(0 == True)
+print(1 == True)
+
+#자료형의 불린
+#자료에 원소값이 있으면 True를 원소값이 없으면 False를 리턴한다
+print(bool([1,2,3]))
+print(bool([]))
+print(bool({}))
+print(bool({1,2,3}))
+
+
+#  @제어문
+
+# 조건(if)문
+
+#돈이 있으면 택시타고 없으면 걸어가라
+
+money = 1
+if money:
+    print('택시하세요')
+else:
+    print('걸어가세요')
+
+
+
+#만약 3000원 이사으이 돈을 가지고 있으면 택시를 타고 그렇지 않으면 걸어가라
+
+print('가지고 있는 돈을 입력하세요 >>>',end='')
+money = int(input())
+
+if money >= 3000:
+    print('택시를 타세요')
+
+else:
+    print('걸어가세요')
+
+
+
+#돈이 3000원 이상 있거나 풀러줄 시계가 있다면 택시를 타고 아니면 걸어가라
+
+print('돈을 입력하세요')
+money = int(input())
+
+print('시계가 있나요?')
+
+yes = 1
+no = 2
+watch = int(input())
+
+if money >= 3000 or watch:
+    print('택시타세요')
+
+else:
+    print('걸어가세요')
+
+
+#not = 특정 원소가 해당 자료형에 있는가?
+# 만약 주머니에 돈이 있으면 택시를 타고, 없으면 걸어가라
+poket = ['paper','phone','money']
+if 'money' in pocket:
+    print('택시타라')
+else:
+    print('걸어가라')
+
+#지갑에 돈이 있으면 택시를 타고, 지갑에 돈이 없지만 시계가 있으면 택시를 타고, 돈도 없고 시계도 없으면 걸어가라
+
+pocket = ['papper','phone']
+watch = 1
+if 'money'in pocket:
+    print('택시타라')
+else:
+    if watch:
+        print('택시타라')
+    else:
+        print('걸어가라')
+
+#elseif의 편리함
+pocket = ['papper','phone']
+watch = 1
+if 'money'in pocket:
+    print('택시타라')
+
+elif watch:
+    print('택시타라')
+
+else:
+    print('걸어가라')
+
+
+# pass의 편리함
+pocket = ['papper','phone','money']
+if 'money' in pocket:
+    pass
+else:
+    print('걸어가라')
 
