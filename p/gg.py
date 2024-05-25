@@ -15,7 +15,7 @@ if score >= 71:
     print('xxx학생의 학점은 C+입니다.')
 else:
     print('xxx학생의 학점은 F입니다.')
-'''
+
 
 
 name = '이승민'
@@ -43,11 +43,29 @@ else:
 
 # 가장 간단한 while문 예시
 
-hit = 1
 
-while hit < 10:
-    hit = hit + 1
-    print(f'나무를{hit}번 찍었습니다.')
 
-if hit == 10:
-    print('나무 넘어갑니다')
+#input 활용 while문
+
+prompt = """
+1. ADD
+2. DEL
+3. LIST
+4. QUIT
+
+Enter number: """
+number = 0
+while number != 4:
+    print(prompt)
+    number = int(input())
+'''
+#break ( while 강제 종료)
+coffee = 10
+money = 300
+while money:
+    print('돈을 받았으니까 커피를 줍니다')
+    coffee -= 1
+    print('남은 커피의 양은 {coffee}개 입니다.' % coffee)
+    if not coffee:
+        print('커피가 다 떨어졌습니다')
+        break
