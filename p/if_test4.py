@@ -17,7 +17,6 @@ else: # 6번 줄 if가 작동하지 않으면 작동하는 코드
 
 
 
-
 #놀이동산 요금 계산
 
 Adult_money = 15000
@@ -64,15 +63,15 @@ if time == 1:
 
         companion = int(input())
         if companion == 1:
-            print(Adult_money * 1,"원입니다")
+            print(Teenager_money * 1,"원입니다")
         elif companion == 2:
-            print(Adult_money * 2,"원입니다")
+            print(Teenager_money * 2,"원입니다")
         elif companion == 3:
-            print(Adult_money * 3,"원입니다")
+            print(Teenager_money * 3,"원입니다")
         elif companion == 4:
-            print(Adult_money * 4,"원입니다")
+            print(Teenager_money * 4,"원입니다")
         elif companion == 5:
-            print(Adult_money * 5,"원입니다")
+            print(Teenager_money * 5,"원입니다")
     else:
         print(f'당신은 어린이 입니다. 결제 금액은 {kid_money}원 입니다')
 
@@ -80,15 +79,15 @@ if time == 1:
 
         companion = int(input())
         if companion == 1:
-            print(Adult_money * 1,"원입니다")
+            print(kid_money * 1,"원입니다")
         elif companion == 2:
-            print(Adult_money * 2,"원입니다")
+            print(kid_money * 2,"원입니다")
         elif companion == 3:
-            print(Adult_money * 3,"원입니다")
+            print(kid_money * 3,"원입니다")
         elif companion == 4:
-            print(Adult_money * 4,"원입니다")
+            print(kid_money * 4,"원입니다")
         elif companion == 5:
-            print(Adult_money * 5,"원입니다")
+            print(kid_money * 5,"원입니다")
         
     print('같이 온 손님이 몇명인가요?')
 
@@ -108,15 +107,15 @@ if time == 2:
 
         companion = int(input())
         if companion == 1:
-            print(Adult_money * 1,"원입니다")
+            print(night_Adult_moneyAdult_money * 1,"원입니다")
         elif companion == 2:
-            print(Adult_money * 2,"원입니다")
+            print(night_Adult_money * 2,"원입니다")
         elif companion == 3:
-            print(Adult_money * 3,"원입니다")
+            print(night_Adult_money * 3,"원입니다")
         elif companion == 4:
-            print(Adult_money * 4,"원입니다")
+            print(night_Adult_money * 4,"원입니다")
         elif companion == 5:
-            print(Adult_money * 5,"원입니다")
+            print(night_Adult_money * 5,"원입니다")
     elif age == 2:
         print(f'당신은 청소년 입니다. 결제 금액은 {night_Teenager_money}원 입니다.')
 
@@ -124,15 +123,15 @@ if time == 2:
 
         companion = int(input())
         if companion == 1:
-            print(Adult_money * 1,"원입니다")
+            print(night_Teenager_money * 1,"원입니다")
         elif companion == 2:
-            print(Adult_money * 2,"원입니다")
+            print(night_Teenager_money * 2,"원입니다")
         elif companion == 3:
-            print(Adult_money * 3,"원입니다")
+            print(night_Teenager_money * 3,"원입니다")
         elif companion == 4:
-            print(Adult_money * 4,"원입니다")
+            print(night_Teenager_money * 4,"원입니다")
         elif companion == 5:
-            print(Adult_money * 5,"원입니다")
+            print(night_Teenager_money * 5,"원입니다")
     else:
         print(f'당신은 어린이 입니다. 결제 금액은 {night_kid_money}원 입니다.')
 
@@ -140,14 +139,53 @@ if time == 2:
 
         companion = int(input())
         if companion == 1:
-            print(Adult_money * 1,"원입니다")
+            print(night_kid_money * 1,"원입니다")
         elif companion == 2:
-            print(Adult_money * 2,"원입니다")
+            print(night_kid_money * 2,"원입니다")
         elif companion == 3:
-            print(Adult_money * 3,"원입니다")
+            print(night_kid_money * 3,"원입니다")
         elif companion == 4:
-            print(Adult_money * 4,"원입니다")
+            print(night_kid_money * 4,"원입니다")
         elif companion == 5:
-            print(Adult_money * 5,"원입니다")
+            print(night_kid_money * 5,"원입니다")
+
+
+print('식사 쿠폰도 구매하시겠습니까? 한식은"1만원", 일식은"15000원", 중식은"2만원"입니다.')
+
+yes = 1
+no = 2
+
+korean_food = 1
+japanese_food = 2
+chinese_food = 3
+
+meal_buy = int(input('식사 쿠폰을 구매하시고 싶으시면 "1번" 구매를 하지 않으실거라면 "2번"을 눌러주세요'))
+
+if meal_buy == 1:
+    print('식사 쿠폰 구매를 입력해주셨습니다. 어느 식사를 드시겠습니까?')
+    meal = int(input('한식은 "1번" 일식은 "2번" 중식은 "3번"입니다.'))
+
+    if meal == 1:
+        print('한식을 선택하셨습니다. 결제 금액은 10000원 입니다.')
+        a = 10000
+    if meal == 2:
+        print('일식을 선택하셨습니다. 결제 금액은 20000원 입니다.')
+        b = 20000
+    if meal == 3:
+        print('중식을 선택하셨습니다. 결제 금액은 30000원 입니다.')
+        c = 300000
+
+print('결제는 무엇으로 하시겠습니까? 카드는"1번", 현금은 "2번을"눌러주시고 앞쪽 데스크로 이동해주세요.')
+
+card_buy = 1
+cash_buy = 2
+
+payment = int(input())
+
+if payment == 1:
+    print('카드를 카드 리더기에 꼽아주세요')
+
+if payment == 2:
+    print('앞쪽 데스크로 이동해주세요')
 
 print('이용해주셔서 감사합니다. 즐거운 시간 보내세요')
