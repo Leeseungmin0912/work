@@ -154,3 +154,145 @@ print(a)
 
 a = df.loc['서준',['음악','체육']]
 peint(a)
+
+b = df.iloc[0,[4]]
+print(b)
+
+#서준이와 우현이의 음악과 체육 점수
+
+g = df.loc[['서준','우현'],['체육','음악']]
+print(g)
+
+h = df.iloc[[0,1],[2,3]]
+print(h)
+
+i = df.loc['서준':'우현','음악':'체육']
+print(i)
+
+#add columes
+#데이터프레임에 국어 컬럼을 추가
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 두 학생의 과목별 사칙연산 수행
+
+add = student1 + student2
+sub = student1 - student2
+mul = student1 * student2
+div = student1 / student2
+
+
+
+# 4개의 시리즈를 합쳐서 하나의 데이터프레임으로 만들기
+
+df = pd.DataFrame([add, sub, mul, div], index = ['덧셈','뺄셈','곱셈','나눗셈'])
+df
+
+#라이브러리 임포트
+
+import numpy as np
+
+student1 = pd.Series({'국어':np.nan, '영어':80,'수학':90})
+student2 = pd.Series({'수학':80, '국어':70})
+
+#데이터에 null값이 있을 때 사칙 연산
+add = student1.add(student2, fill_value=0)
+sub = student1.sub(student2, fill_value=0)
+mul = student1.mul(student2, fill_value=0)
+div = student1.div(student2, fill_value=0)
+
+df = pd.DataFrame()
+
+import seaborn as sns
+titanic  = sns.load_datatest('titanic')
+titanic
+
+#titanic 데이터셋에서 age, fare 2개 열을 선택하여 데이터프레임 새로 만들기
+
+df = titanic.loc[:,['age','fare']]
+df.head(10)
+
+
+#데이터 프레임 투 넘버
+
+add = df + 10
+
+
+
+#데이터 프레임끼리 계산
+
+sub = add - df
+sub.head()
+
+
+
+
+
+
+
+a = df['Name','Age','Country','MARRIED',['CINA','JENNY','BELA','ALEX','LIAM','SAM'],[29, 26, 26, 35, 32, 30],['VIETNAM','TAIWAN','USA','SOUTH KOREA','ENGLAND','TAIPEI'],[0,0,0,0,0,1]]
