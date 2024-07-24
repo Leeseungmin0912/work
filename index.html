@@ -3,26 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KIA TIGERS</title>
-    <link href="kia_tigers.png" rel="shortcut icon" type="image/x-icon">
+    <title>Just 쇼핑몰</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
-
-    <h1>제목인데요?</h1>
-    <br>
-    <span class="text">
-        <p>끝에 없는 날카로우나 끓은 미인글 곳이 아름다우냐? 인간은 물방아 내려온 전인 수 사막이다.</p>
-        <P>끝에 없는 날카로우나 끓은 미인글 곳이 아름다우냐? <br>인간은 물방아 내려온 전인 수 사막이다.</P>
-        <hr>
-    </span>
-    <!-- 
-    <p> 단락 만들기
-    <br> 줄 바꾸기 
-    <hr> 수평선 넣기
-
-
-
-
-    -->
+    <div id="wrap">
+        <header>
+            <div class="logo">
+               <a href="#"><img src="image/logo.png.png" alt="쇼핑몰logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">탑</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">블라우스</a></li>
+                                <li><a href="#">티</a></li>
+                                <li><a href="#">셔츠</a></li>
+                                <li><a href="#">니트</a></li>
+                            </ul>
+                        </li>
+                    
+                    <li><a href="#">아우터</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">자켓</a></li>
+                            <li><a href="#">코트</a></li>
+                            <li><a href="#">가디건</a></li>
+                            <li><a href="#">머플러</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">펜츠</a>
+                        <ul>
+                            <ul class="sub-menu">
+                                <li><a href="#">블라우스</a></li>
+                                <li><a href="#">티</a></li>
+                                <li><a href="#">셔츠</a></li>
+                                <li><a href="#">니트</a></li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li><a href="#">악세사리</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul></li>
+                    </ul>
+            
+            </nav>
+        </header>
+        <section id="visual">
+            <div class="slide">
+                <ul>
+                    <li><a href=""><img src="https://picsum.photos/1200/300" alt="slide1"><p>JSUT 쇼핑몰 사은 이벤트</p></a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><img src="https://loremflickr.com/1200/300" alt="slide2"><p>악세사리 신규 입고</p></a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><img src="https://placehold.co/1200x300" alt="slide3"><p>2023년 재고 떨이 판매</p></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="contents">
+            <article>
+                <div class="title">
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">갤러리</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                <div class="notice">
+                    <ul>
+                        <li><a href="#">JUST쇼핑몰 공지사항1<span>2024.7.24</span></a></li>
+                        <li><a href="#">JUST쇼핑몰 공지사항2<span>2024.7.24</span></a></li>
+                        <li><a href="#">JUST쇼핑몰 공지사항3<span>2024.7.24</span></a></li>
+                        <li><a href="#">JUST쇼핑몰 공지사항4<span>2024.7.24</span></a></li>
+                    </ul>
+                </div>
+                <div class="gallery">
+                    <ul>
+                        <li><a href="#"><img src="http://picsum.photos/120/120" alt="gallery1"><h3>갤러리1</h3></a></li>
+                        <li><a href="#"><img src="http://picsum.photos/120/120" alt="gallery2"><h3>갤러리2</h3></a></li>
+                        <li><a href="#"><img src="http://picsum.photos/120/120" alt="gallery3"><h3>갤러리3</h3></a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            </article>
+            <article>
+                <div class="banner">
+                    <a href="#"><img src="https://picsum.photos/360/180" alt="banner"><h2>배너입니다</h2></a>
+                </div>
+            </article>
+            <article>
+                <div class="banner">
+                    <a href="#"><img src="https://picsum.photos/360/180" alt="shortcut"><h2>바로가기</h2></a>       
+                </div>
+                
+            </article>
+        </section>
+        <footer>
+            <div class="logo bt-logo">
+                <a href="#"><img src="image/logo.png.png" alt="logo"></a>
+            </div>
+            <div class="copy">Copylight</div>
+            <div class="sns">
+                <select name="sns" id="sns">
+                    <option value="x">x</option>
+                    <option value="facebook">facebook</option>
+                    <option value="instagram">instagram</option>
+                </select>
+            </div>
+            
+        </footer>
+    </div>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
