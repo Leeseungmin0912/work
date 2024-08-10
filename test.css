@@ -1,0 +1,27 @@
+/* * { 
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Black Han Sans" sans-serif;
+    text-decoration: none;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+/} */
+
+p {
+    font-size: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 2px 2px 4cap #900;
+    white-space: nowrap;
+    width: 400px;
+    height: 300px;
+    line-height: 300px;
+    border: 1px solid;
+    text-align:center;
+    color: red;
+}
