@@ -1,0 +1,106 @@
+/* 전체 레이아웃 및 본문 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h3 {
+    color: #333;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+    background-color: #005b96;
+    color: #fff;
+    border-bottom: 2px solid #003f6e;
+}
+
+h3 {
+    font-size: 18px;
+    margin-left: 20px;
+    color: #444;
+}
+
+/* ul 목록 스타일 */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+ul li {
+    background-color: #e2e2e2;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #005b96;
+}
+
+/* 테이블 스타일 */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #005b96;
+    color: #fff;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    color: #333;
+}
+
+/* 팀 색상 스타일 */
+.team-north {
+    background-color: #001d72;
+    color: white;
+}
+
+.team-south {
+    background-color: #00b19f;
+    color: white;
+}
+
+/* 테이블 마지막 행 강조 */
+td:last-child {
+    font-weight: bold;
+}
+
+/* 중앙 정렬 */
+center {
+    margin: 20px;
+}
+
+/* 추가적으로 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    ul li {
+        padding: 8px;
+    }
+}

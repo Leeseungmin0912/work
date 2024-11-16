@@ -9,49 +9,59 @@
 <body>
     <div class="container">
         <h1>Baseball page</h1>
-        <h4><a href="login.html">로그인하기</a></h4>
-        <h4><a href="allstar.html">올스타전 결과 구경하러가기</a></h4>
-        <h4><a href="join_the_membership.html">회원가입하기</a></h4>
+        
+        <div class="links">
+            <h4><a href="login.html">로그인하기</a></h4>
+            <h4><a href="allstar.html">올스타전 결과 구경하러가기</a></h4>
+            <h4><a href="join_the_membership.html">회원가입하기</a></h4>
+        </div>
+
         <div class="team-logos">
-            <a href="https://www.doosanbears.com" class="team-logo" target="blank" onclick="showAlert('두산 베어스')">
-                <img src="doosan.png" alt="Doosan Bears">
+            <a href="https://www.doosanbears.com" class="team-logo" target="_blank" onclick="showAlert('두산 베어스')">
+                <img src="doosan.png" alt="Doosan Bears" width="130">
             </a>
-            <a href="https://www.lgtwins.com" class="team-logo" target="_blank" onclick="showAlert('엘지 트윈스')">ㄴㄴㄴ
-                <img src="images.jpg" alt="LG Twins">
+            <a href="https://www.lgtwins.com" class="team-logo" target="_blank" onclick="showAlert('엘지 트윈스')">
+                <img src="TWINS.png" alt="LG Twins" width="130">
             </a>
             <a href="https://heroesbaseball.co.kr/index.do" class="team-logo" target="_blank" onclick="showAlert('키움 히어로즈')">
-                <img src="kiwoom.png" alt="Kiwoom Heroes">
+                <img src="kiwoom.png" alt="Kiwoom Heroes" width="130">
             </a>
             <a href="https://www.ktwiz.co.kr" class="team-logo" target="_blank" onclick="showAlert('케이티 위즈')">
-                <img src="wiz.png" alt="KT Wiz">
+                <img src="wiz.png" alt="KT Wiz" width="130">
             </a>
             <a href="https://www.ssglanders.com" class="team-logo" target="_blank" onclick="showAlert('SSG 랜더스')">
-                <img src="landers.png" alt="SSG Landers">
+                <img src="landers.png" alt="SSG Landers" width="130">
             </a>    
             <a href="https://www.hanwhaeagles.co.kr" class="team-logo" target="_blank" onclick="showAlert('한화 이글스')">
-                <img src="hanwha.png" alt="Hanwha Eagles">
+                <img src="hanwha.png" alt="Hanwha Eagles" width="130">
             </a>
             <a href="https://www.giantsclub.com" class="team-logo" target="_blank" onclick="showAlert('롯데 자이언츠')">
-                <img src="lotte.png" alt="Lotte Giants">
+                <img src="lotte.png" alt="Lotte Giants" width="130">
             </a>
             <a href="https://www.ncdinos.com" class="team-logo" target="_blank" onclick="showAlert('엔씨 다이노스')">
-                <img src="dinos.png" alt="NC Dinos">
+                <img src="dinos.png" alt="NC Dinos" width="130">
             </a>
             <a href="https://tigers.co.kr/" class="team-logo" target="_blank" onclick="showAlert('기아 타이거즈')">
-                <img src="tigers.png" alt="KIA Tigers">
+                <img src="tigers.png" alt="KIA Tigers" width="130">
             </a>
             <a href="https://www.samsunglions.com" class="team-logo" target="_blank" onclick="showAlert('삼성 라이온즈')">
-                <img src="lions.png" alt="Samsung Lions">
+                <img src="lions.png" alt="Samsung Lions" width="130">
             </a>
         </div>
-        <h2><a href="https://www.koreabaseball.com/Futures/Main.aspx">퓨처스 경기 일정 보러가기</a></h2>
-        <h2><a href="https://www.koreabaseball.com/Record/Player/HitterBasic/Basic1.aspx">선수 기록 보러가기</a></h2>
-        <h2><a href="https://www.koreabaseball.com/Schedule/Schedule.aspx">경기 일정보러가기</a></h2>
+
+        <div class="links">
+            <h2><a href="https://www.koreabaseball.com/Futures/Main.aspx">퓨처스 경기 일정 보러가기</a></h2>
+            <h2><a href="https://www.koreabaseball.com/Record/Player/HitterBasic/Basic1.aspx">선수 기록 보러가기</a></h2>
+            <h2><a href="https://www.koreabaseball.com/Schedule/Schedule.aspx">경기 일정보러가기</a></h2>
+        </div>
+        
         <table>
-            <caption>KBO League Standings - May 2024</caption>
+            <caption>KBO League - 2024</caption>
             <tr>
                 <th>순위</th>
                 <th>팀 이름</th>
+                <th>구단 마크</th>
+                <th>경기 수</th>
                 <th>승</th>
                 <th>패</th>
                 <th>무</th>
@@ -61,93 +71,115 @@
             <tr>
                 <td>1</td>
                 <td>Kia Tigers</td>
-                <td>83</td>
-                <td>53</td>
+                <td><img src="tigers.png" alt="Kia Tigers Logo" width="50"></td>
+                <td>144</td>
+                <td>87</td>
+                <td>55</td>
                 <td>2</td>
-                <td>.610</td>
+                <td>.613</td>
                 <td>-</td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>Samsung Lions</td>
-                <td>76</td>
-                <td>61</td>
                 <td>2</td>
-                <td>.555</td>
-                <td>7.5</td>
+                <td>Samsung Lions</td>
+                <td><img src="lions.png" alt="Samsung Lions Logo" width="50"></td>
+                <td>144</td>
+                <td>78</td>
+                <td>64</td>
+                <td>2</td>
+                <td>.549</td>
+                <td>9.0</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>LG Twins</td>
-                <td>71</td>
-                <td>64</td>
+                <td><img src="TWINS.png" alt="LG Twins Logo" width="50"></td>
+                <td>144</td>
+                <td>76</td>
+                <td>66</td>
                 <td>2</td>
-                <td>.526</td>
-                <td>11.5</td>
+                <td>.535</td>
+                <td>11.0</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>Doosan Bears</td>
-                <td>69</td>
-                <td>66</td>
+                <td><img src="doosan.png" alt="Doosan Bears Logo" width="50"></td>
+                <td>144</td>
+                <td>74</td>
+                <td>68</td>
                 <td>2</td>
-                <td>.511</td>
-                <td>13.5</td>
+                <td>.521</td>
+                <td>13.0</td>
             </tr>
             <tr>
                 <td>5</td>
-                <td>KT wiz</td>
-                <td>69</td>
-                <td>68</td>
+                <td>KT Wiz</td>
+                <td><img src="wiz.png" alt="KT Wiz Logo" width="50"></td>
+                <td>144</td>
+                <td>72</td>
+                <td>70</td>
                 <td>2</td>
-                <td>.504</td>
-                <td>14.5</td>
+                <td>.500</td>
+                <td>15.0</td>
             </tr>
             <tr>
                 <td>6</td>
                 <td>SSG Landers</td>
-                <td>66</td>
-                <td>68</td>
+                <td><img src="landers.png" alt="SSG Landers Logo" width="50"></td>
+                <td>144</td>
+                <td>72</td>
+                <td>70</td>
                 <td>2</td>
-                <td>.493</td>
-                <td>16.0</td>
+                <td>.500</td>
+                <td>15.0</td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>Lotte Giants</td>
-                <td>62</td>
-                <td>70</td>
+                <td><img src="lotte.png" alt="Lotte Giants Logo" width="50"></td>
+                <td>144</td>
+                <td>66</td>
+                <td>74</td>
                 <td>4</td>
-                <td>.470</td>
-                <td>19.0</td>
+                <td>.458</td>
+                <td>20.0</td>
             </tr>
             <tr>
                 <td>8</td>
                 <td>Hanwha Eagles</td>
-                <td>63</td>
-                <td>72</td>
+                <td><img src="hanwha.png" alt="Hanwha Eagles Logo" width="50"></td>
+                <td>144</td>
+                <td>66</td>
+                <td>76</td>
                 <td>2</td>
-                <td>.467</td>
-                <td>19.5</td>
+                <td>.458</td>
+                <td>21.0</td>
             </tr>
             <tr>
                 <td>9</td>
                 <td>NC Dinos</td>
-                <td>60</td>
-                <td>74</td>
+                <td><img src="dinos.png" alt="NC Dinos Logo" width="50"></td>
+                <td>144</td>
+                <td>61</td>
+                <td>81</td>
                 <td>2</td>
-                <td>.448</td>
-                <td>22.0</td>
+                <td>.425</td>
+                <td>26.0</td>
             </tr>
             <tr>
                 <td>10</td>
-                <td>kiwoom Heroes</td>
-                <td>57</td>
-                <td>80</td>
+                <td>Kiwoom Heroes</td>
+                <td><img src="kiwoom.png" alt="Kiwoom Heroes Logo" width="50"></td>
+                <td>144</td>
+                <td>58</td>
+                <td>86</td>
                 <td>0</td>
-                <td>.416</td>
-                <td>26.5</td>
+                <td>.403</td>
+                <td>30.0</td>
             </tr>
+        </table>
+        
         <div class="footer">
             <p>© 2024 이승민 All right reserved.</p>
         </div>
