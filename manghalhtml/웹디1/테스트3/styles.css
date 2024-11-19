@@ -1,0 +1,19 @@
+*{margin: 0; padding: 0;}
+
+.wrap{width: 1000px;}
+.left{width: 210px; float: left;}
+.logo{width: 100%; height: 50px;background-color: #77f;}
+.nav{width: 100%; height: 600px;background-color: #76f;}
+
+.right{width: 790px; float: left;}
+.slide{width: 100%; height: 350px;background-color: #75f;}
+.section{width: 100%; height: 200px;background-color: #74f;}
+.notice{width: 270px; height: 200px; float: left;background-color: #73f;}
+.banner{width: 260px; height: 200px;float: left;background-color: #72f;}
+.short{width: 260px; height: 200px;float: left;background-color: #71f;}
+
+.footer{width: 100%; height: 100px;}
+.logo2{width: 200px; height: 100px;float: left;background-color: #77f;}
+.meco{width: 590px; height: 100px;float: left;background-color: #76f;}
+.menu2{width: 100%; height: 50px;background-color: #75f;}
+.copy{width: 100%; height: 50px;background-color: #74f;}
