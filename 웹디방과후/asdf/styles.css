@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  }
+  ul{list-style: none;}
+  .wrap {
+    margin: 0 auto;
+    width: 1200px;
+  }
+  .a {
+    width: 100%;
+    height: 100px;
+    color: inherit;
+}
+  
+  .logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+    background: #ccc;
+  }
+  .logo img,
+  logo2 img {
+    margin-top: 30px;
+  }
+  .nav {
+    width: 1000px;
+    height: 100px;
+    float: left;
+    background: #bbb;
+  }
+  .main {
+    position: absolute;
+    left: 550px;
+    top: 20px;
+    z-index: 1;
+    background-color: #FFF;
+  }
+  .main li {
+    width: 150px;
+    float: left;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+  }
+  .main li:hover{
+    background-color: #000;
+    color: #FFF;
+  }
+  .sub{
+    display: none;
+  }
+  .sub li {
+    background-color: #FFF;
+    color: #000;
+  }
+  .sub li:hover{
+    background-color: #000;
+    color: #FFF;
+  }
+  .b {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .b img {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .c {
+    width: 100%;
+    height: 200px;
+  }
+  .notice {
+    width: 400px;
+    height: 200px;
+    float: left;
+    background: #999;
+  }
+  .banner {
+    width: 400px;
+    height: 200px;
+    float: left;
+    background: #888;
+  }
+  .short {
+    width: 400px;
+    height: 200px;
+    float: left;
+    background: #777;
+  }
+  
+  .d {
+    width: 100%;
+    height: 100px;
+  }
+  .logo2 {
+    width: 200px;
+    height: 100px;
+    float: left;
+    background: #666;
+  }
+  .copy {
+    width: 800px;
+    height: 100px;
+    float: left;
+    background: #555;
+  }
+  .sns {
+    width: 200px;
+    height: 100px;
+    float: left;
+    background: #444;
+  }
