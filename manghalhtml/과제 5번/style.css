@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.room {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.verandah {
+    width: 43.05%;
+    height: 61px;
+    position: absolute;
+    left: 290px;
+}
+
+.master-room {
+    width: 220px;
+    position: absolute;
+    top: 60px;
+    left: 290px;
+    height: 150px;
+}
+
+.living-room {
+    width: 43.05%;
+    position: absolute;
+    top: 60px;
+    left: 290px;
+    height: 300px;
+}
+
+.small-room2 {
+    width: 170px;
+    position: absolute;
+    top: 213px;
+    left: 947px;
+    height: 147px;
+}
+
+.kitchen {
+    width: 200px;
+    position: absolute;
+    top: 209px;
+    left: 290px;
+
+    height: 151px;
+}
+
+.bathroom {
+    width: 120px;
+    position: absolute;
+    top: 179px;
+    left: 997px;
+    height: 35px;
+}
+
+.small-room1 {
+    width: 200px;
+    position: absolute;
+    left: 917px;
+    top: 60px;
+
+    height: 120px;
+}
+
+.entrance {
+    width: 150px;
+    position: absolute;
+    top: 310px;
+    left: 625px;
+    height: 50px;
+}
