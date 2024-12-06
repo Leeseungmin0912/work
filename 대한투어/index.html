@@ -1,14 +1,175 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
     <title>대한투어</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/script.js"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="logo" href="#">
+          <img src="image/logo.png" alt="로고" />
+        </a>
+        <ul class="navi">
+          <li>
+            <a href="#">해외여행</a>
+            <ul class="subMenu">
+              <li><a href="#">동남아/대만</a></li>
+              <li><a href="#">중국/홍콩</a></li>
+              <li><a href="#">유럽/두바이</a></li>
+              <li><a href="#">미주/하와이</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">국내여행</a>
+            <ul class="subMenu">
+              <li><a href="#">서울/경기권</a></li>
+              <li><a href="#">충청권</a></li>
+              <li><a href="#">전라권</a></li>
+              <li><a href="#">경상/강원권</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">제주도</a>
+            <ul class="subMenu">
+              <li><a href="#">버스여행</a></li>
+              <li><a href="#">자유여행</a></li>
+              <li><a href="#">호텔/팬션</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">렌트카</a>
+            <ul class="subMenu">
+              <li><a href="#">국내렌트카</a></li>
+              <li><a href="#">해외렌트카</a></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+      <!-- 이미지슬라이드  -->
+      <div class="imgSlide">
+        <a href="#"
+          ><img src="image/slide1.jpg" alt="슬라이드이미지 1" /><span
+            class="imgText"
+            ></span
+          ></a
+        >
+        <a href="#"
+          ><img src="image/slide2.jpg" alt="슬라이드이미지2" /><span
+            class="imgText"
+            ></span
+        ></a
+        >
+        <a href="#"
+          ><img src="image/slide3.jpg" alt="슬라이드이미지3" /><span
+            class="imgText"
+            ></span
+          ></a
+        >
+      </div>
+      <!-- 컨텐츠 -->
+      <div class="contents">
+        <div>
+          <ul class="tabMenu">
+            <li class="active">
+              <a href="#">공지사항</a>
+              <div class="tabBG notice">
+                <ul>
+                  <li>
+                    <a href="#"
+                      >01. 웹사이트 팝업 링크입니다
+                      <span>2024-07-07</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >02. 레퀴엠2-안년하세요 인사드... <span>2024-02-26</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >03. 레퀴엠1-새롭게 개편된 웹사...<span>2024-02-24</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >04. 한국에서 일어나고 있는 사 ... <span>2022-03-06</span></a
+                    >
+                  </li>
+                </li>
+                <li>
+                  <a href="#"
+                    >05. 장기 그리고 개중국의 위협 .. <span>2022-11-29</span></a
+                  >
+                </li>
+                <li>
+                    <a href="#"
+                      >06. 스모그, PM2.5, AQI 정보 <span>2022-11-24</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">갤러리</a>
+              <div class="tabBG gallery">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img src="image/gallery1.jpg" alt="썸네일1"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="image/gallery2.jpg" alt="썸네일2"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="image/gallery3.jpg" alt="썸네일3"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <!-- tabMenu 끝 -->
+        </div>
+        <div class="banner">
+          <img src="image/banner_img.jpg" alt="배너">
+        </div>
+        <div class="direct">
+            <img src="image/shortcut_img.jpg" alt="바로가기">
+        </div>
+        <div class="short">
+            <img src="image/shortcut_img.jpg" alt="=숏">
+        </div>
+      </div>
+
+      <footer>
+        <div class="footerLogo">
+          <img src="image/logo2.png" alt="하단로고" />
+        </div>
+          <div class="footerCright">
+            COPYRIGHT © by WEBDESIGN. ALL RIGHTS RESERVED
+          </div>
+        </div>
+      </footer>
+    </main>
+    <div id="modalWrap">
+      <div class="modal">
+        <h1>하늘과 바람과 별과 시 사생대회</h1>
+        <p>
+          윤동주 시인의 시집 <하늘과 바람과 별과 시> 출간 72주년을 맞이하여
+          천문대에서 개최하는 사생대회가 열립니다. 별 하나에 추억, 사랑, 쓸쓸함,
+          동경 그리고 시와, 어머니를 그렸던 시인처럼 별같은 마음을 가진 분들은
+          참여해주세요.
+        </p>
+        <button class="btn">닫기</button>
+      </div>
+    </div>
+  </body>
 </html>
